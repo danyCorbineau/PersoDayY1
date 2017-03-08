@@ -16,7 +16,7 @@
 	*/
 	function changeBloc(divis)
 	{
-		var gli=divis.offsetTop;
+		var gli=divis.offsetTop-$('#navid').height();
 		$('html,body').animate({
 			scrollTop: gli
 			}, 500
@@ -46,7 +46,8 @@
 		test si l'élément est à l'écran
 	*/
 	function testElemEcran(el) {
-		var elemY = el.offsetTop;
+		//alert($('#navid').height());
+		var elemY = el.offsetTop-($('#navid').height()+5);
 		var elemH = el.offsetHeight;
 		var windowY = window.pageYOffset;
 		var windowH = window.innerHeight;
