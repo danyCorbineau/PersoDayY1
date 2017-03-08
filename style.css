@@ -1,0 +1,91 @@
+/* Styles de base */
+      body {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+      }
+      
+	  #accueil,#les_types_de_bijoux,#les_métaux,#les_pierres,#les_serties
+	  {
+		 background-color: rgba(255, 255, 255, 0.7);
+	  }
+	  #contact
+	  {
+		  background-color: #B2DFDB;
+		  padding-top: 0%;
+		  padding-bottom: 0%;
+		  margin-top: 0%;
+		  margin-bottom: 0%;
+	  }
+	  #centre
+	  {
+		vertical-align: middle;
+	  }
+	  .caracteristique
+	  {
+		 background-color: rgba(255, 255, 255, 0.8);
+	  }
+	 
+	 .carousel .item {
+			max-height: 100%;
+		}
+	.carousel img {
+			position: absloute;
+			top: 0;
+			width: 100%;
+			max-height: 950px;
+		}
+	 
+	 .centerDropdown {
+		left: auto ;
+		right: -25%;
+		width: 10%;
+	}
+	.centerDropdown:after {
+		left: auto ;
+		right: 5% ;
+	}
+	.dropdown-menu {
+		left: 50% ;
+		margin-left: -70px;
+	}
+	
+	.imageNot100
+	{
+		width: 300px;
+	}
+	
+    #navid 
+    {
+        background-color: white;
+    }
+
+    .navclass
+	{
+		color: black;
+        
+	}
+	
+	.margin-me
+	{
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	
+	.nextButtonCss
+    {
+		position:fixed;
+		bottom:5px;
+		left:30%; 
+		background-color: #E0E0E0; 
+		width:40%; 
+		min-width:280px; 
+		color:#000000; 
+		border: 3px solid #F0F0F0;
+	}
+
+	.nextButtonCss:hover{
+		background-color: #A0A0A0;
+		border-color: #D0D0D0;
+	}
