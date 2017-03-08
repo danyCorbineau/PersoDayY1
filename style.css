@@ -1,89 +1,115 @@
 /* Styles de base */
-      body {
+	body 
+	{
 		margin: 0;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-      }
-      
-	  #accueil,#les_types_de_bijoux,#les_métaux,#les_pierres,
-	  {
-		 background-color: rgba(255, 255, 255, 0.7);
-	  }
-	  
-	   #les_serties
-	   {
-		   margin-bottom: 9%;
-		   margin-left: 10%;
-		   margin-right: 10%;
-		   font-size: 16px; 
-		   background-color: rgba(255, 255, 255, 0.7);
-	   }
-	  
-	  #contact
-	  {
-		  background-color: #B2DFFF;
-		  padding-bottom: 0%;
-		  margin-bottom: 0%;
-		  margin-top: 200px;
-	  }
-	  #centre
-	  {
-		vertical-align: middle;
-	  }
-	  
-	  #navid 
-    {
-        background-color: white;
-    }
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
 	
+	/*
+		Définition de font pour chaques parties
+	*/
+	#accueil,#les_types_de_bijoux,#les_métaux,#les_pierres,
+	{
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+	
+	/*
+		Modiffication du serti pour palier le bug
+	*/
+	#les_serties
+	{
+		margin-bottom: 9%;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 16px; 
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+	
+	/*
+		Modiffication du contact pour palier le bug du dessus
+	*/
+	#contact
+	{
+		background-color: #B2DFFF;
+		padding-bottom: 0%;
+		margin-bottom: 0%;
+		margin-top: 200px;
+	}
+	
+	/*
+		Barre de navigation blanche
+	*/
+	#navid 
+	{
+		background-color: white;
+	}
+	
+	/*
+		Ecriture dans la barre de navigation noire
+	*/
 	.navclass
 	{
 		color: black;
-        
 	}
 	
+	/*
+		Marge dans la barre de navigation
+	*/
 	.margin-me
 	{
 		margin-left: 2%;
 		margin-right: 2%;
 	}
-	  
-	  .sertiPara
-	  {
-		  margin-bottom:40px; text-align: justify;
-	  }
-	  
-	  .caracteristique
-	  {
-		 background-color: rgba(255, 255, 255, 0.8);
-	  }
-	 
-	 .carousel .item {
-			max-height: 100%;
-		}
-	.carousel img {
-			position: absloute;
-			top: 0;
-			width: 100%;
-			max-height: 950px;
-		}
-	 
-	 .centerDropdown {
+	
+	/*
+		paragraphe de chaque sertisage
+	*/
+	.sertiPara
+	{
+		margin-bottom:40px; text-align: justify;
+	}
+	
+	.carousel .item 
+	{
+		max-height: 100%;
+	}
+	
+	/*
+		image du carousel
+	*/
+	.carousel img 
+	{
+		position: absloute;
+		top: 0;
+		width: 100%;
+		max-height: 950px;
+	}
+	
+	/*
+		positionnement du dropdown
+	*/
+	.centerDropdown {
 		left: auto ;
 		right: -25%;
 		width: 10%;
 	}
+	
 	.centerDropdown:after {
 		left: auto ;
 		right: 5% ;
 	}
+	
 	.dropdown-menu {
 		left: 50% ;
 		margin-left: -70px;
 	}
 	
+	/*
+		Taille de la 1er image
+	*/
 	.imageNot100
 	{
 		width: 300px;
@@ -100,6 +126,9 @@
 		margin-right: 15px;
 	}
 	
+	/*
+		Bouton suivant
+	*/
 	.nextButtonCss{
 		position:fixed;
 		bottom:5px;
@@ -110,6 +139,7 @@
 		color:#000000; 
 		border: 3px solid #F0F0F0;
 	}
+	
 	.nextButtonCss:hover{
 		background-color: #A0A0A0;
 		border-color: #D0D0D0;
