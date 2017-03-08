@@ -6,37 +6,64 @@
 		-moz-background-size: cover;
 		background-size: cover;
 		-o-background-size: cover;
+        color: #59554E;
+        min-width: 500px;
 	}
 	
 	/*
 		Définition de font pour chaques parties
 	*/
-	#accueil,#les_types_de_bijoux,#les_métaux,#les_pierres,
-	{
-		background-color: rgba(255, 255, 255, 0.7);
-	}
-	
-	/*
+    #accueil
+    {
+        padding-top: 30px;
+        background-color: white;
+    }
+
+    #les_types_de_bijoux
+    {
+        padding-top: 30px;
+        background-color: #E2E3D9;
+    }
+
+    #les_métaux
+    {
+        padding-top: 30px;
+        background-color: white;
+    }
+
+    #les_pierres
+    {
+        padding-top: 30px;
+        background-color: #E2E3D9;
+    }
+
+/*
 		Modiffication du serti pour palier le bug
-	*/
-	#les_serties
+*/
+    #les_serties
 	{
 		margin-bottom: 9%;
 		margin-left: 10%;
 		margin-right: 10%;
-		font-size: 16px; 
-		background-color: rgba(255, 255, 255, 0.7);
+		font-size: 16px;
+        background-color: white;
 	}
+
+    #sertissage
+    {
+        background-color: white;
+    }
 	
-	/*
+    /*
 		Modiffication du contact pour palier le bug du dessus
 	*/
 	#contact
 	{
-		background-color: #B2DFFF;
-		padding-bottom: 0%;
-		margin-bottom: 0%;
+		background-color: #59554E;
+		padding-bottom: 0;
+		margin-bottom: 0;
 		margin-top: 200px;
+        color: #E2E3D9;
 	}
 	
 	/*
@@ -45,8 +72,22 @@
 	#navid 
 	{
 		background-color: white;
+        box-shadow: 15px 0px 15px #D0D0D0 ;
+        margin: 0;
 	}
+
+/* 
+    bouton de la navbar 
+*/
+    #headerButton
+    {
+        border-color: black;
+    }
 	
+    .lineInButton
+    {
+        background-color: black;
+    }
 	/*
 		Ecriture dans la barre de navigation noire
 	*/
@@ -115,16 +156,7 @@
 		width: 300px;
 	}
 	
-	.color-me
-	{
-		color: black;
-	}
 	
-	.margin-me
-	{
-		margin-left: 15px;
-		margin-right: 15px;
-	}
 	
 	/*
 		Bouton suivant
@@ -132,15 +164,13 @@
 	.nextButtonCss{
 		position:fixed;
 		bottom:5px;
-		left:30%; 
-		background-color: #E0E0E0; 
-		width:40%; 
-		min-width:280px; 
-		color:#000000; 
-		border: 3px solid #F0F0F0;
+		left:40%; 
+		background-color: #FAFAFA; 
+		width:20%; 
+		min-width:260px;  
+		border: 1px solid #59554E;
 	}
 	
 	.nextButtonCss:hover{
-		background-color: #A0A0A0;
-		border-color: #D0D0D0;
+		background-color: #E2E3D9;
 	}
