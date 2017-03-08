@@ -16,24 +16,28 @@
     #accueil
     {
         padding-top: 30px;
+        padding-bottom: 30px;
         background-color: white;
     }
 
     #les_types_de_bijoux
     {
         padding-top: 30px;
+        padding-bottom: 30px;
         background-color: #E2E3D9;
     }
 
     #les_métaux
     {
         padding-top: 30px;
+        padding-bottom: 30px;
         background-color: white;
     }
 
     #les_pierres
     {
         padding-top: 30px;
+        padding-bottom: 30px;
         background-color: #E2E3D9;
     }
 
@@ -72,7 +76,7 @@
 	#navid 
 	{
 		background-color: white;
-        box-shadow: 15px 0px 15px #D0D0D0 ;
+        box-shadow: 0px 5px 15px #808080;
         margin: 0;
 	}
 
@@ -129,21 +133,29 @@
 		max-height: 950px;
 	}
 	
+    .carouselCaptionUp
+    {
+        top: 25%;
+    }
+
 	/*
 		positionnement du dropdown
 	*/
-	.centerDropdown {
+	.centerDropdown 
+    {
 		left: auto ;
 		right: -25%;
 		width: 10%;
 	}
 	
-	.centerDropdown:after {
+	.centerDropdown:after 
+    {
 		left: auto ;
 		right: 5% ;
 	}
 	
-	.dropdown-menu {
+	.dropdown-menu 
+    {
 		left: 50% ;
 		margin-left: -70px;
 	}
@@ -161,16 +173,19 @@
 	/*
 		Bouton suivant
 	*/
-	.nextButtonCss{
-		position:fixed;
-		bottom:5px;
-		left:40%; 
-		background-color: #FAFAFA; 
-		width:20%; 
-		min-width:260px;  
-		border: 1px solid #59554E;
-	}
+	.nextButtonCss
+    {
+        border-radius: 0;
+        position:fixed;
+        bottom:5px;
+        left:40%;
+        background-color: #FAFAFA ;
+        width:20%;
+        min-width:260px;  
+        box-shadow: 0px 0px 15px #999999 ;
+    }
 	
-	.nextButtonCss:hover{
-		background-color: #E2E3D9;
+	.nextButtonCss:hover
+    {
+		background-color: #CACACA;
 	}
