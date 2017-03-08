@@ -40,13 +40,13 @@ require 'scriptPhp.php';
 	
 	
 	<!-- Navigation bar-->
-    <header class="navbar navbar-fixed-top color-me" role="navigation">
+      <header class="navbar navbar-fixed-top" id="navid" role="navigation">
 
       <!-- Navigation OK
       ================================================== -->
       
-        <div class="container-fluid">
-			<div class="navbar-header">
+          <div class="container-fluid">
+              <div class="navbar-header">
 					<button type="button" data-target=".collapse" data-toggle="collapse" class="navbar-toggle">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -54,10 +54,10 @@ require 'scriptPhp.php';
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-				</button>
-				<a href="#page-top" class="navbar-brand navclass">Dessine-moi un Bijou</a>
-			</div>
-			<div class="collapse navbar-collapse" >
+				    </button>
+				    <a href="#page-top" class="navbar-brand navclass">Dessine-moi un Bijou</a>
+              </div>
+              <div class="collapse navbar-collapse" >
 				<ul class="nav navbar-nav navbar-right margin-me">
 					<li class="hidden"><a href="#page-top"></a></li>
 					<li><a href="#accueil" class="navclass">Présentation du Site</a></li>
@@ -67,39 +67,35 @@ require 'scriptPhp.php';
 					<li><a href="#les_serties" class="navclass">Le Sertissage</a></li>
 					<li><a href="#contact" class="navclass">Dessiner mon Bijou</a></li>
 				</ul>
-			</div>
-		</div>
-    </header>
+              </div>
+          </div>
+      </header>
 	
-
-	<div class="navbar navclass" style="margin-bottom:0;" role="navigation"></div>
+      <div class="navbar navclass" style="margin-bottom:0;" role="navigation"></div>
 	
     <!-- Carousel -->
-	<div id="carousel" class="carousel slide" data-ride="carousel">
-		<div class="carousel-inner">
-			<?php  
-			$a=$bd->getImageCreation();
-			$d=$a->fetch();
-			echo '<div class="item active"> <img src="assets/img/'.$d['image'].'" alt="Croquis"/></div>
-			';
-			while($d=$a->fetch())
-			{
-				echo '<div class="item"> <img src="assets/img/'.$d['image'].'" alt="Croquis"/></div>
-			';
-			}
-			
-		?>
-		</div>
-	</div>
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+                <?php  
+                $a=$bd->getImageCreation();
+                $d=$a->fetch();
+                echo '<div class="item active"> <img src="assets/img/'.$d['image'].'" alt="Croquis"/></div>
+                ';
+                while($d=$a->fetch())
+                {
+                    echo '<div class="item"> <img src="assets/img/'.$d['image'].'" alt="Croquis"/></div>
+                ';
+                }
+
+                ?>
+          </div>
+      </div>
 	
 	
-	
-	
-	
-    <!-- All blocks -->
+      <!-- All blocks -->
 		
 		
-	  <!-- Block Accueil -->
+      <!-- Block Accueil -->
       <div id="accueil">
 		<div class="row">
 			<h1 class="text-center">Présentation du Site</h1>
@@ -108,7 +104,7 @@ require 'scriptPhp.php';
 		</div>
       </div>
 		
-		<!-- Blocks Type De Bijoux -->
+      <!-- Blocks Type De Bijoux -->
       <div  id="les_types_de_bijoux">
         <h1 class="text-center" style="margin-bottom: 50px;">Les Types de Bijoux</h1>
 		
@@ -118,25 +114,25 @@ require 'scriptPhp.php';
 				<table class="table table-hover">
 					<tbody>
 					<?php
-		$a=$bd->getTypeBijou();
-		while($d=$a->fetch())
-		{
-			echo '
-			<tr>
-				<td><img class="thumbnail" style="padding:0;" src="assets/img/'.$d['image'].'" alt="Image de bijoux" height="140" width="140" /></td>
-				<td><h2 class="text-center">'.$d['nom'].'</h2></td>
-				<td><p class="text-center">'.$d['description'].'</h3></td>
-			</tr>
-			';
-		}
-		?>
+                        $a=$bd->getTypeBijou();
+                        while($d=$a->fetch())
+                        {
+                            echo '
+                            <tr>
+                            <td><img class="thumbnail" style="padding:0;" src="assets/img/'.$d['image'].'" alt="Image de bijoux" height="140" width="140" /></td>
+                            <td><h2 class="text-center">'.$d['nom'].'</h2></td>
+                            <td><p class="text-center">'.$d['description'].'</p></td>
+                            </tr>
+                            ';
+                        }
+                        ?>
 					</tbody>
 				</table>
 			</div>
 		</div>
       </div>
 		
-		<!-- Block Les Metaux -->
+      <!-- Block Les Metaux -->
 	  <div id="les_métaux">
 			<h1 class="text-center" style="margin-bottom: 50px;">Les Métaux</h1>
 			
@@ -152,107 +148,107 @@ require 'scriptPhp.php';
 								</tr>
 							</thead>
 							<tbody>
-							<?php
-								$a=$bd->getMetaux();
-								while($d=$a->fetch())
-								{
-									echo '
-									<tr>
-										<td ><img class="thumbnail" style="padding:0;" src="assets/img/'.$d['image'].'" alt="Métaux"  height="100" width="100"/></td>
-										<td><h3>'.$d['nom'].'</h3></td>
-										<td>'.$d['couleur'].'</td>
-										<td>'.$d['description'].'</td>
-										<td>'.$d['methode_entretien'].'</td>
-									</tr>';
-								}
+							     <?php
+								    $a=$bd->getMetaux();
+								    while($d=$a->fetch())
+								        {
+									       echo '
+									       <tr>
+										      <td ><img class="thumbnail" style="padding:0;" src="assets/img/'.$d['image'].'" alt="Métaux"  height="100" width="100"/></td>
+										      <td><h3>'.$d['nom'].'</h3></td>
+										      <td>'.$d['couleur'].'</td>
+										      <td>'.$d['description'].'</td>
+										      <td>'.$d['methode_entretien'].'</td>
+									       </tr>';
+								        }
 								
-							?>
+							     ?>
 								
 							</tbody>
 						</table>
 					</div>
 				</div>
 				
-			<!-- All metaux -->
+			<!-- fin metaux -->
 
         
       </div>
 	  
 	  <!-- Block Les Pierres -->
 	  <div  id="les_pierres">
-        <h1 class="text-center" style="margin-bottom: 20px;">Les Pierres</h1>
+            <h1 class="text-center" style="margin-bottom: 20px;">Les Pierres</h1>
 		
 			<!-- Color selector -->
 			<div class="row" style="margin-bottom: 30px;">
 				<div class=" dropdown  col-sm-12 text-center">
-				  <button class="btn btn-default dropdown-toggle" id="selecteur" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-					Couleur
-					<span class="caret"></span>
-				  </button>
-				  <ul class=" dropdown-menu centerDropdown" aria-labelledby="selecteur">
-					<li><a href="index.php?color=r#les_pierres">Rouge</a></li>
-					<li><a href="index.php?color=b#les_pierres">Bleu</a></li>
-					<li><a href="index.php?color=v#les_pierres">Vert</a></li>
-					<li><a href="index.php?color=j#les_pierres">Jaune</a></li>
-					<li><a href="index.php?color=vi#les_pierres">Violet</a></li>
-					<li><a href="index.php?color=n#les_pierres">Noir</a></li>
-					<li><a href="index.php?color=bl#les_pierres">Blanc</a></li>
-					<li><a href="index.php?color=g#les_pierres">Gris</a></li>
-					<li><a href="index.php?color=t#les_pierres">Transparent</a></li>
-					<li><a href="index.php?color=mc#les_pierres">Multi-color</a></li>
-				  </ul>
+				    <button class="btn btn-default dropdown-toggle" id="selecteur" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					   Couleur
+					   <span class="caret"></span>
+				    </button>
+                    <ul class=" dropdown-menu centerDropdown" aria-labelledby="selecteur">
+                        <li><a href="index.php?color=r#les_pierres">Rouge</a></li>
+                        <li><a href="index.php?color=b#les_pierres">Bleu</a></li>
+                        <li><a href="index.php?color=v#les_pierres">Vert</a></li>
+                        <li><a href="index.php?color=j#les_pierres">Jaune</a></li>
+                        <li><a href="index.php?color=vi#les_pierres">Violet</a></li>
+                        <li><a href="index.php?color=n#les_pierres">Noir</a></li>
+                        <li><a href="index.php?color=bl#les_pierres">Blanc</a></li>
+                        <li><a href="index.php?color=g#les_pierres">Gris</a></li>
+                        <li><a href="index.php?color=t#les_pierres">Transparent</a></li>
+                        <li><a href="index.php?color=mc#les_pierres">Multi-color</a></li>
+                    </ul>
 				</div>
 			</div>
 		
-		<!-- All stones -->
-		<div class="container-fluid">
-         <div class="table-responsive">
-            <table class="table table-sm table-hover">
-				<thead>
-					<tr>
-					  <th>Image</th>
-					  <th>Nom</th>
-					  <th>Taille</th>
-					  <th>Couleur</th>
-					  <th>Description</th>
-					</tr>
-				</thead>
-				<tbody>
-			<?php
-				if(isset($_GET['color']))
-				{
-					//nom, taille, couleur, couleurR
-					$a=$bd->sendRqt("SELECT nom AS nom, taille, couleur, couleurR, image, description FROM pierres WHERE LOWER(couleurR)=LOWER('".$_GET['color']."')");
-				}
-				else
-				{
-					// *4rand
-					$a=$bd->sendRqt("SELECT nom AS nom, taille, couleur, couleurR, image, description FROM pierres WHERE id_pierre BETWEEN 0 AND 3" );
-				}
-				
-				while($d=$a->fetch())
-				{
-						echo '
-						<tr>
-							<td ><img class="thumbnail" style="padding:0;" src="assets/img/'.$d['image'].'" alt="Métaux"  height="100" width="100"/> </td>
-							<td><h3>'.$d['nom'].'</h3></td>
-							<td>'.$d['taille'].'mm</td>
-							<td>'.$d['couleur'].'</td>
-							<td>'.$d['description'].'</td>
-						</tr>
-						';
-				}
-				
-			
-			?>
-			</tbody>
-			</table>
-		</div>
-	</div>
+            <!-- All stones -->
+            <div class="container-fluid">
+             <div class="table-responsive">
+                <table class="table table-sm table-hover">
+                    <thead>
+                        <tr>
+                          <th>Image</th>
+                          <th>Nom</th>
+                          <th>Taille</th>
+                          <th>Couleur</th>
+                          <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                <?php
+                    if(isset($_GET['color']))
+                    {
+                        //nom, taille, couleur, couleurR
+                        $a=$bd->sendRqt("SELECT nom AS nom, taille, couleur, couleurR, image, description FROM pierres WHERE LOWER(couleurR)=LOWER('".$_GET['color']."')");
+                    }
+                    else
+                    {
+                        // *4rand
+                        $a=$bd->sendRqt("SELECT nom AS nom, taille, couleur, couleurR, image, description FROM pierres WHERE id_pierre BETWEEN 0 AND 3" );
+                    }
+
+                    while($d=$a->fetch())
+                    {
+                            echo '
+                            <tr>
+                                <td ><img class="thumbnail" style="padding:0;" src="assets/img/'.$d['image'].'" alt="Métaux"  height="100" width="100"/> </td>
+                                <td><h3>'.$d['nom'].'</h3></td>
+                                <td>'.$d['taille'].'mm</td>
+                                <td>'.$d['couleur'].'</td>
+                                <td>'.$d['description'].'</td>
+                            </tr>
+                            ';
+                    }
+
+
+                ?>
+                </tbody>
+                </table>
+            </div>
+	       </div>
 	</div>
      
-	 <!-- Block Sertisage -->
-	 <div id="les_serties">
+    <!-- Block Sertisage -->
+    <div id="les_serties">
         <h1 class="text-center">Le Sertissage</h1>
 		<!-- Boutons Sertissage -->
 		
@@ -305,23 +301,20 @@ require 'scriptPhp.php';
 				<p class="col-sm-12 sertiPara">Le serti dit descendu, consiste à sertir des pierres de pavage sur une bande de métal de même largeur, à l’aide de minuscules griffes. Bien qu’il soit très prisé, il s’agit là d’une aberration. Sous couvert d’apporter plus de légèreté aux bijoux, il est en réalité utilisé pour masquer la taille diamants. Les griffes les font en effet paraitre plus importants, et moins de pierres sont nécessaires pour couvrir une même surface. Mais l’éclat du bijou en est très altéré, et il est inévitable que les diamants finissent par tomber si le bijou est porté au quotidien. Il est alors impossible de le réparer convenablement.</p>
 			</div>
 		</div>
-     </div>
-	
-	  <!-- Block Contact-->
-	  
-        <div id="contact">
-				<h1 class="text-center" style="margin-bottom: 10px;">Dessiner mon Bijou</h1>
-				<h2 class="text-center" style="margin-bottom: 1%;">Commander une palette de dessins</h2>
-				<div class="row text-center">
-					<p class=" col-lg-4 col-md-4 col-sm-12">tél: 06600660</p>
-					<p class=" col-lg-4 col-md-4 col-sm-12">skype: bijoux</p>
-					<p class=" col-lg-4 col-md-4 col-sm-12">web: mycaillou.com</p>
-				</div>
-		</div>
+    </div>
+    
+    <!-- Block Contact-->
+    <div id="contact">
+        <h1 class="text-center" style="margin-bottom: 10px;">Dessiner mon Bijou</h1>
+        <h2 class="text-center" style="margin-bottom: 1%;">Commander une palette de dessins</h2>
+        <div class="row text-center">
+            <p class=" col-lg-4 col-md-4 col-sm-12">tél: 06600660</p>
+            <p class=" col-lg-4 col-md-4 col-sm-12">skype: bijoux</p>
+            <p class=" col-lg-4 col-md-4 col-sm-12">web: mycaillou.com</p>
+        </div>
+    </div>
 	 
-	  
 
-	  
 
 
     <!-- footer with dropdown for Mentions Legales and Politique de confidentialité -->
@@ -330,24 +323,23 @@ require 'scriptPhp.php';
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 		</div>
-				
-				<!-- List of links -->
-				<ul class="nav navbar-nav">
-					<li><a href="mentions_legale.html" class="color-me">Mentions Légales</a></li>
-					<li class="position:fixed; right:1%;"><a href="mentions_legale.html#pol_conf" class="color-me">Politique de Confidentialité</a></li>
-				</ul>
-		</div>
+
+        <!-- List of links -->
+        <ul class="nav navbar-nav">
+            <li><a href="mentions_legale.html" class="color-me">Mentions Légales</a></li>
+            <li class="position:fixed; right:1%;"><a href="mentions_legale.html#pol_conf" class="color-me">Politique de Confidentialité</a></li>
+        </ul>
 	</footer>
 	
 	
 	<!-- bouton descendre -->
-		<div class="btn nextButtonCss" onClick="nextButton()">
-			<h3>
-				<span class="glyphicon glyphicon-chevron-down"></span>
-					Continuer
-				<span class="glyphicon glyphicon-chevron-down"></span>
-			</h3>
-		</div>
+    <div class="btn nextButtonCss" onClick="nextButton()">
+        <h3>
+            <span class="glyphicon glyphicon-chevron-down"></span>
+                Continuer
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </h3>
+    </div>
 	
 	<!-- All script-->
 	
@@ -362,4 +354,3 @@ require 'scriptPhp.php';
 	</body>
 
 </html>
-
