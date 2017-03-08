@@ -1,44 +1,27 @@
 /* Styles de base */
       body {
-		margin: 0;
-		
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
         -o-background-size: cover;
       }
       
-	  #accueil,#les_types_de_bijoux,#les_métaux,#les_pierres,
+	  #accueil,#les_types_de_bijoux,#les_métaux,#les_pierres,#les_serties
 	  {
-		 
+		 background-color: rgba(255, 255, 255, 0.7);
 	  }
-	  
-	   #les_serties
-	   {
-		   margin-bottom: 9%;
-		   margin-left: 10%;
-		   margin-right: 10%;
-		   font-size: 16px; 
-		   background-color: rgba(255, 255, 255, 0.7);
-	   }
-	  
 	  #contact
 	  {
-		  background-color: #B2DFFF;
+		  background-color: #B2DFDB;
+		  padding-top: 0%;
 		  padding-bottom: 0%;
+		  margin-top: 0%;
 		  margin-bottom: 0%;
-		  margin-top: 200px;
 	  }
 	  #centre
 	  {
 		vertical-align: middle;
 	  }
-	  
-	  .sertiPara
-	  {
-		  margin-bottom:40px; text-align: justify;
-	  }
-	  
 	  .caracteristique
 	  {
 		 background-color: rgba(255, 255, 255, 0.8);
@@ -73,18 +56,25 @@
 		width: 300px;
 	}
 	
-	.color-me
+    #navid 
+    {
+        background-color: white;
+    }
+
+    .navclass
 	{
 		color: black;
+        
 	}
 	
 	.margin-me
 	{
-		margin-left: 15px;
-		margin-right: 15px;
+		margin-left: 2%;
+		margin-right: 2%;
 	}
 	
-	.nextButtonCss{
+	.nextButtonCss
+    {
 		position:fixed;
 		bottom:5px;
 		left:30%; 
@@ -94,6 +84,7 @@
 		color:#000000; 
 		border: 3px solid #F0F0F0;
 	}
+
 	.nextButtonCss:hover{
 		background-color: #A0A0A0;
 		border-color: #D0D0D0;
