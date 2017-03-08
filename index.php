@@ -19,7 +19,7 @@ require 'scriptPhp.php';
 		<meta name="Description" CONTENT="Je vous propose de dessiner votre futur bijoux.">
 		<meta name="Keywords" CONTENT="Bijoux">
 		
-		<title>Dessine-moi un Bijou</title>
+		<title>Dessine-moi un Bijou, le site pour demander des croquis.</title>
 		<meta name="description" content=".........">
 		
 		
@@ -40,14 +40,14 @@ require 'scriptPhp.php';
 	
 	
 	<!-- Navigation bar-->
-    <header class="navbar navbar-fixed-top navclass" id="navid" role="navigation">
+    <header class="navbar navbar-fixed-top color-me" role="navigation">
 
       <!-- Navigation OK
       ================================================== -->
       
         <div class="container-fluid">
 			<div class="navbar-header">
-					<button type="button" data-target=".collapse" data-toggle="collapse" class="navbar-toggle">
+					<button type="button" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" data-target="nav2">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -55,24 +55,24 @@ require 'scriptPhp.php';
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#page-top" class="navbar-brand navclass">Dessine-moi un Bijou</a>
+				<a href="#page-top" class="navbar-brand color-me">Dessine-moi un Bijou</a>
 			</div>
-			<div class="collapse navbar-collapse" >
+			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right margin-me">
 					<li class="hidden"><a href="#page-top"></a></li>
-					<li><a href="#accueil" class="navclass">Présentation du Site</a></li>
-					<li><a href="#les_types_de_bijoux" class="navclass">Les Types de Bijoux</a></li>
-					<li><a href="#les_métaux" class="navclass">Les Métaux</a></li>
-					<li><a href="#les_pierres" class="navclass">Les Pierres</a></li>
-					<li><a href="#les_serties" class="navclass">Le Sertissage</a></li>
-					<li><a href="#contact" class="navclass">Dessiner mon Bijou</a></li>
+					<li><a href="#accueil" class="color-me">Présentation du Site</a></li>
+					<li><a href="#les_types_de_bijoux" class="color-me">Les Types de Bijoux</a></li>
+					<li><a href="#les_métaux" class="color-me">Les Métaux</a></li>
+					<li><a href="#les_pierres" class="color-me">Les Pierres</a></li>
+					<li><a href="#les_serties" class="color-me">Le Sertissage</a></li>
+					<li><a href="#contact" class="color-me">Dessiner mon Bijou</a></li>
 				</ul>
 			</div>
 		</div>
     </header>
 	
 
-	<div class="navbar navclass" style="margin-bottom:0;" role="navigation"></div>
+	<div class="navbar color-me" style="margin-bottom:0;" role="navigation"></div>
 	
     <!-- Carousel -->
 	<div id="carousel" class="carousel slide" data-ride="carousel">
@@ -252,7 +252,7 @@ require 'scriptPhp.php';
 	</div>
      
 	 <!-- Block Sertisage -->
-	 <div id="les_serties" style="margin-bottom: 9%;">
+	 <div id="les_serties">
         <h1 class="text-center">Le Sertissage</h1>
 		<!-- Boutons Sertissage -->
 		
@@ -268,59 +268,59 @@ require 'scriptPhp.php';
 		</div>
 		<h3 class="col-sm-12" style="margin-bottom:20px; text-align: center;">Il existe de nombreuses façons de sertir une pierre, en voici quelqu'une</h3>
 		
-		<div id="listTextSertis">
+		<div id="listTextSertis" >
 			<div id="divSerti_griffes">
 				<h3 class="text-left" id="Serti_griffes">Serti à griffes</h3>
-				<p class="col-sm-12" style="margin-bottom:40px; text-align: justify;">Le serti à griffes est de loin le type de sertissage le plus utilisé en joaillerie. Il consiste à maintenir la pierre à l’aide de griffes en or ou en platine, que le sertisseur plaque sur la pierre. Leur nombre peut aller de trois à plus d’une dizaine pour les gemmes importantes. Néanmoins, c’est bien le serti 4 griffes qui donne les plus beaux rendus. Il est à la fois sécurisant, discret, et esthétique. Il peut être utilisé pour des pierres centrales, ou des pierres d’entourage si leur dimension le permet, sans quoi elles seraient noyées dans le métal.</p>
+				<p class="col-sm-12 sertiPara">Le serti à griffes est de loin le type de sertissage le plus utilisé en joaillerie. Il consiste à maintenir la pierre à l’aide de griffes en or ou en platine, que le sertisseur plaque sur la pierre. Leur nombre peut aller de trois à plus d’une dizaine pour les gemmes importantes. Néanmoins, c’est bien le serti 4 griffes qui donne les plus beaux rendus. Il est à la fois sécurisant, discret, et esthétique. Il peut être utilisé pour des pierres centrales, ou des pierres d’entourage si leur dimension le permet, sans quoi elles seraient noyées dans le métal.</p>
 			</div>
 			
 			<div id="divSerti_clos">
 				<h3 class="text-left" id="Serti_clos">Serti clos</h3>
-				<p class="col-sm-12" style="margin-bottom:40px; text-align: justify;">Il est lui aussi très utilisé en joaillerie. Comme son nom l’indique, la pierre est complètement entourée de métal. Il est extrêmement sécurisant, et permet d’obtenir des bijoux plus importants. Le serti clos est cependant à éviter pour les pierres de petite dimension. Afin d’apporter une bonne tenue dans le temps, une épaisseur minimum d’or est en effet nécessaire. Le risque est donc d’étouffer la pierre avec le métal, lui empêchant de capter toute la lumière dont elle a besoin.</p>
+				<p class="col-sm-12 sertiPara">Il est lui aussi très utilisé en joaillerie. Comme son nom l’indique, la pierre est complètement entourée de métal. Il est extrêmement sécurisant, et permet d’obtenir des bijoux plus importants. Le serti clos est cependant à éviter pour les pierres de petite dimension. Afin d’apporter une bonne tenue dans le temps, une épaisseur minimum d’or est en effet nécessaire. Le risque est donc d’étouffer la pierre avec le métal, lui empêchant de capter toute la lumière dont elle a besoin.</p>
 			</div>
 			
 			<div id="divSerti_demi_clos">
 				<h3 class="text-left" id="Serti_demi_clos">Serti demi-clos</h3>
-				<p class="col-sm-12" style="margin-bottom:40px; text-align: justify;">Lorsque l’on souhaite créer un bijou aux formes généreuses, le serti demi-clos est un bon compromis entre le style du bijou, et l’éclat de votre pierre précieuse. Il permet d’obtenir des bijoux plus cossus, tout en permettant à la lumière de pénétrer la gemme. On peut ainsi jouer sur les volumes d’une bague pour obtenir un rendu très aéré tout en étant présent sur le doigt, ou au contraire pavé complètement la bague, sans qu’un rubis ou un diamant de 3 carats soit nécessaire.</p>
+				<p class="col-sm-12 sertiPara">Lorsque l’on souhaite créer un bijou aux formes généreuses, le serti demi-clos est un bon compromis entre le style du bijou, et l’éclat de votre pierre précieuse. Il permet d’obtenir des bijoux plus cossus, tout en permettant à la lumière de pénétrer la gemme. On peut ainsi jouer sur les volumes d’une bague pour obtenir un rendu très aéré tout en étant présent sur le doigt, ou au contraire pavé complètement la bague, sans qu’un rubis ou un diamant de 3 carats soit nécessaire.</p>
 			</div>
 			
 			<div id="divSerti_masse">
 				<h3 class="text-left" id="Serti_masse">Serti massé</h3>
-				<p class="col-sm-12" style="margin-bottom:40px; text-align: justify;">Il consiste à inclure la pierre dans le volume de la bague, de façon à ce que le métal affleure le dessus de la pierre. On peut ainsi créer des bijoux aux formes plus contemporaines. Bien qu’il soit très protecteur pour la pierre, il est bon de rappeler qu’un sertissage, quel qu’il soit, protégera la pierre, à la seule condition qu’il soit exécuté par un sertisseur expérimenté.</p>
+				<p class="col-sm-12 sertiPara">Il consiste à inclure la pierre dans le volume de la bague, de façon à ce que le métal affleure le dessus de la pierre. On peut ainsi créer des bijoux aux formes plus contemporaines. Bien qu’il soit très protecteur pour la pierre, il est bon de rappeler qu’un sertissage, quel qu’il soit, protégera la pierre, à la seule condition qu’il soit exécuté par un sertisseur expérimenté.</p>
 			</div>
 			
 			<div id="divSerti_grains">
 				<h3 class="text-left" id="Serti_grains">Serti à grains</h3>
-				<p class="col-sm-12" style="margin-bottom:40px; text-align: justify;">Le sertissage à grains est le type de sertissage le plus utilisé pour les pierres de pavage rondes. Il s’agit d’une bande de métal, dans laquelle le sertisseur vient fixer les pierres, tout en conservant un filet de métal de chaque côté des brillants. Pour cela, il creuse le métal. A l’aide d’un outil, il soulève ce que l’on appelle des « grains », qui servent à maintenir les pierres. C’est lors du sertissage que les filets apparaissent. Deux grains peuvent suffire à fixer correctement la pierre, mais lorsque leur dimension le permet on peut alors lever plusieurs grains, et même utilisé des grains de décor entre les pierres. Un sertissage à grains bien exécuté est un excellent signe pour reconnaitre un bijou de qualité. Seuls les sertisseurs expérimentés parviennent à obtenir des grains et des filets réguliers. C’est non seulement l’esthétique de votre bijou qui en dépend, mais également sa tenue dans le temps. Si les grains ou les filets sont trop fins, les pierres tomberont inévitablement.</p>
+				<p class="col-sm-12 sertiPara">Le sertissage à grains est le type de sertissage le plus utilisé pour les pierres de pavage rondes. Il s’agit d’une bande de métal, dans laquelle le sertisseur vient fixer les pierres, tout en conservant un filet de métal de chaque côté des brillants. Pour cela, il creuse le métal. A l’aide d’un outil, il soulève ce que l’on appelle des « grains », qui servent à maintenir les pierres. C’est lors du sertissage que les filets apparaissent. Deux grains peuvent suffire à fixer correctement la pierre, mais lorsque leur dimension le permet on peut alors lever plusieurs grains, et même utilisé des grains de décor entre les pierres. Un sertissage à grains bien exécuté est un excellent signe pour reconnaitre un bijou de qualité. Seuls les sertisseurs expérimentés parviennent à obtenir des grains et des filets réguliers. C’est non seulement l’esthétique de votre bijou qui en dépend, mais également sa tenue dans le temps. Si les grains ou les filets sont trop fins, les pierres tomberont inévitablement.</p>
 			</div>
 			
 			
 			<div id="divSerti_rail">
 				<h3 class="text-left" id="Serti_rail">Serti rail</h3>
-				<p class="col-sm-12" style="margin-bottom:40px; text-align: justify;">Il est utilisé en haute joaillerie pour sertir les bandes calibrées de diamants et autres pierres de couleur. Il s’agit là de sertir les pierres dans un rail de métal afin qu’il n’y ait aucun espace entre elles. Afin que le rendu final soit le plus fin possible, et que l’or ou le platine soient les moins visibles possible, une retaille des pierres est généralement nécessaire pour qu’elles épousent parfaitement les courbes du bijou. On l’utilise également pour la réalisation d’alliance en diamants taille princesse, et plus rarement de pierres rondes. Dans ce cas, bien que le travail du sertisseur doive être précis, une retaille des pierres n’est pas nécessaire.</p>
+				<p class="col-sm-12 sertiPara">Il est utilisé en haute joaillerie pour sertir les bandes calibrées de diamants et autres pierres de couleur. Il s’agit là de sertir les pierres dans un rail de métal afin qu’il n’y ait aucun espace entre elles. Afin que le rendu final soit le plus fin possible, et que l’or ou le platine soient les moins visibles possible, une retaille des pierres est généralement nécessaire pour qu’elles épousent parfaitement les courbes du bijou. On l’utilise également pour la réalisation d’alliance en diamants taille princesse, et plus rarement de pierres rondes. Dans ce cas, bien que le travail du sertisseur doive être précis, une retaille des pierres n’est pas nécessaire.</p>
 			</div>
 			
 			<div id="divSerti_descendu">
 				<h3 class="text-left" id="Serti_descendu">Serti descendu</h3>
-				<p class="col-sm-12">Le serti dit descendu, consiste à sertir des pierres de pavage sur une bande de métal de même largeur, à l’aide de minuscules griffes. Bien qu’il soit très prisé, il s’agit là d’une aberration. Sous couvert d’apporter plus de légèreté aux bijoux, il est en réalité utilisé pour masquer la taille diamants. Les griffes les font en effet paraitre plus importants, et moins de pierres sont nécessaires pour couvrir une même surface. Mais l’éclat du bijou en est très altéré, et il est inévitable que les diamants finissent par tomber si le bijou est porté au quotidien. Il est alors impossible de le réparer convenablement.</p>
+				<p class="col-sm-12 sertiPara">Le serti dit descendu, consiste à sertir des pierres de pavage sur une bande de métal de même largeur, à l’aide de minuscules griffes. Bien qu’il soit très prisé, il s’agit là d’une aberration. Sous couvert d’apporter plus de légèreté aux bijoux, il est en réalité utilisé pour masquer la taille diamants. Les griffes les font en effet paraitre plus importants, et moins de pierres sont nécessaires pour couvrir une même surface. Mais l’éclat du bijou en est très altéré, et il est inévitable que les diamants finissent par tomber si le bijou est porté au quotidien. Il est alors impossible de le réparer convenablement.</p>
 			</div>
 		</div>
      </div>
 	
 	  <!-- Block Contact-->
 	  
-        <div id="contact" style=" margin-top: 100px;">
-		<h1 class="text-center" style="margin-bottom: 10px;">Dessiner mon Bijou</h1>
-		<h2 class="text-center" style="margin-bottom: 1%;">Commander une palette de dessins</h2>
-		
-			<div class="row text-center">
-				<p class=" col-lg-4 col-md-4 col-sm-12">tél: 06600660</p>
-				<p class=" col-lg-4 col-md-4 col-sm-12">skype: bijoux</p>
-				<p class=" col-lg-4 col-md-4 col-sm-12">web: mycaillou.com</p>
-			</div>
+        <div id="contact">
+				<h1 class="text-center" style="margin-bottom: 10px;">Dessiner mon Bijou</h1>
+				<h2 class="text-center" style="margin-bottom: 1%;">Commander une palette de dessins</h2>
+				<div class="row text-center">
+					<p class=" col-lg-4 col-md-4 col-sm-12">tél: 06600660</p>
+					<p class=" col-lg-4 col-md-4 col-sm-12">skype: bijoux</p>
+					<p class=" col-lg-4 col-md-4 col-sm-12">web: mycaillou.com</p>
+				</div>
 		</div>
 	 
 	  
+
 	  
 
 
@@ -333,8 +333,8 @@ require 'scriptPhp.php';
 				
 				<!-- List of links -->
 				<ul class="nav navbar-nav">
-					<li><a href="mentions_legale.html" class="navclass">Mentions Légales</a></li>
-					<li class="position:fixed; right:1%;"><a href="mentions_legale.html#pol_conf" class="navclass">Politique de Confidentialité</a></li>
+					<li><a href="mentions_legale.html" class="color-me">Mentions Légales</a></li>
+					<li class="position:fixed; right:1%;"><a href="mentions_legale.html#pol_conf" class="color-me">Politique de Confidentialité</a></li>
 				</ul>
 		</div>
 	</footer>
